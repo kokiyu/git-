@@ -1,0 +1,35 @@
+body
+{
+		background-color: #DC698A;
+		text-align: center;
+
+}
+
+.container{
+   color: #333333;
+   width:400px;
+   height:400px;
+   margin:50px auto;
+   display:table;    
+   background-color:#1eacf9;
+   opacity:0.8;
+   border-radius: 10px;
+}
+
+.horizon{
+width:100%;
+height:2px;
+background-color:#fdff94;
+vertical-align:middle;
+position:relative;
+margin:0 auto;
+z-index:-999;
+
+}
+
+.title{
+	text-align: left;
+	letter-spacing: 3px;
+	padding-left: 15px;
+
+}
