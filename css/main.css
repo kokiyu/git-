@@ -1,29 +1,77 @@
 body
 {
-		background-color: #DC698A;
-		text-align: center;
+  background-color: #063e54;
+}
+
+p{
+   text-align: left;
+   padding-left: 2px;
+   letter-spacing: 2px;
+}
+
+.contact-container{
+   display: flex;
+   flex-direction: column;
+   margin-left: 20%;
 
 }
+
+.contact-way{
+   background: url('../image/kuang.png') no-repeat; 
+   width: 140px;
+   height:80px;
+   background-size:100% 100%;
+   
+}
+
+.contact-way p{
+
+   font-size: 10px;
+   margin-top: 25px;
+   margin-left: 15px;
+   color: #333;
+   word-break:break-all; 
+   width: 100px;   
+}
+
+.all-container{
+   display: flex;
+   flex-direction: row;
+   margin-top: 50px;
+}
+
+.img-container
+{
+   display: flex;
+   flex-direction: column;
+   width: 100px;
+}
+
+.img-container img{
+   width: 60px;
+   height: 60px;
+   padding: 10px;
+}
+
 
 .container{
    color: #333333;
    width:400px;
    height:400px;
-   margin:50px auto;
-   display:table;    
    background-color:#1eacf9;
    opacity:0.8;
    border-radius: 10px;
+   box-shadow: 10px 10px 5px #888888;
 }
 
 .horizon{
-width:100%;
-height:2px;
-background-color:#fdff94;
-vertical-align:middle;
-position:relative;
-margin:0 auto;
-z-index:-999;
+   width:100%;
+   height:2px;
+   background-color:#fdff94;
+   vertical-align:middle;
+   position:relative;
+   margin:0 auto;
+   z-index:-999;
 
 }
 
@@ -31,5 +79,22 @@ z-index:-999;
 	text-align: left;
 	letter-spacing: 3px;
 	padding-left: 15px;
+
+}
+
+.passage{
+   margin-bottom: 50px;
+   padding: 15px;
+}
+
+.enter{
+   text-align: center;
+   color: #fff;
+   margin:35px auto;
+   font-size: 15px;
+   width: 150px;
+   padding:15px;
+   border: 1px solid #fff;
+   border-radius: 10px;
 
 }
