@@ -3,29 +3,30 @@
 <head>
 	<meta charset="utf-8">
 	<title>kokiyu的技术文档</title>
-	<script type="https://unpkg.com/vue/dist/vue.js" src="script/main.js"></script>
 	<link rel="stylesheet" href="css/main.css" />
+	<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script  type="text/javascript" src="script/main.js" defer></script>
 </head>
 
 <body >
-	<div class="all-container">
-		<div class="contact-container">
-			<div class="contact-way">
-				<p>651258027</p>
+	<div class="all-container"  id ="all">
+		<div class="contact-container" >
+			<div class="contact-way" v-bind:style="{visibility:seenQQ}">
+				<p >651258027</p>
 			</div>
-			<div class="contact-way">
-			<p>奶茶和Oreo和李小窝</p>
+			<div class="contact-way"  v-bind:style="{visibility:seenWechat}">
+			<p >奶茶和Oreo和李小窝</p>
 			</div>
-			<div class="contact-way">
+			<div class="contact-way"  v-bind:style="{visibility:seenWeibo}">
 				<p>MilkteaoreoSpaceStation</p>
 			</div>
 		</div>
 
 
-		<div class="img-container">
-			<img src="image/QQ.png">
-			<img src="image/wechat.png">
-			<img src="image/微博.png">
+		<div class="img-container" >
+			<img :src="seenQQimg"   v-on:mouseenter="openQQway"  v-on:mouseleave="closeQQWay">
+			<img :src="seenWechatImg"   v-on:mouseenter="openWechatWay"  v-on:mouseleave="closeWechatWay">
+			<img :src="seenWeiboImg"  v-on:mouseenter="openWeiboWay"  v-on:mouseleave="closeWeiboWay">
 		</div>
 
 		<div class="container">
@@ -46,6 +47,6 @@
 		</div>
 	</div>
 
-	<div class="enter">进入我的世界</div>
+	<div class="enter" >进入我的世界</div>
 </body>
 </html>
