@@ -1,12 +1,23 @@
 body
 {
   background-color: #063e54;
+   margin: 0;
+   height: 699px;
+   width: auto;
+   background: url('../image/iceLand.jpeg') no-repeat;
+   background-size: 100% 100%
+
 }
 
 p{
    text-align: left;
    padding-left: 2px;
    letter-spacing: 2px;
+}
+
+#all
+{
+
 }
 
 .contact-container{
@@ -37,7 +48,8 @@ p{
 .all-container{
    display: flex;
    flex-direction: row;
-   margin-top: 50px;
+   padding-top: 50px;
+
 }
 
 .img-container
@@ -62,6 +74,7 @@ p{
    opacity:0.8;
    border-radius: 10px;
    box-shadow: 10px 10px 5px #888888;
+animation: myfirst 5s;
 }
 
 .horizon{
@@ -90,7 +103,7 @@ p{
 .enter{
    text-align: center;
    color: #fff;
-   margin:35px auto;
+   margin:75px auto;
    font-size: 15px;
    width: 150px;
    padding:15px;
@@ -98,3 +111,11 @@ p{
    border-radius: 10px;
 
 }
+
+@keyframes myfirst
+{
+0%   {opacity: 0;}
+
+100% {opacity :1;}
+}
+
