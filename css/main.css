@@ -1,11 +1,11 @@
 body
 {
-  background-color: #063e54;
-   margin: 0;
-   height: 699px;
-   width: auto;
-   background: url('../image/iceLand.jpeg') no-repeat;
-   background-size: 100% 100%
+ background-color: #063e54;
+ margin: 0;
+ height: 699px;
+ width: auto;
+ background: url('../image/iceLand.jpeg') no-repeat;
+ background-size: 100% 100%
 
 }
 
@@ -15,10 +15,6 @@ p{
    letter-spacing: 2px;
 }
 
-#all
-{
-
-}
 
 .contact-container{
    display: flex;
@@ -59,6 +55,31 @@ p{
    width: 100px;
 }
 
+.runCar1{
+  opacity: 0;
+   margin-left: -450px;
+   animation: runcars 2s ease 0s;
+   animation-fill-mode:forwards;
+
+}
+
+.runCar2{
+  opacity: 0;
+
+   margin-left: -450px;
+   animation: runcars 2s ease 0.4s;
+   animation-fill-mode:forwards;
+
+}
+.runCar3{
+  opacity: 0;
+
+   margin-left: -450px;
+   animation: runcars 2s ease 0.6s;
+   animation-fill-mode:forwards;
+
+}
+
 .img-container img{
    width: 60px;
    height: 60px;
@@ -74,7 +95,7 @@ p{
    opacity:0.8;
    border-radius: 10px;
    box-shadow: 10px 10px 5px #888888;
-animation: myfirst 5s;
+   animation: myfirst 2s;
 }
 
 .horizon{
@@ -103,19 +124,42 @@ animation: myfirst 5s;
 .enter{
    text-align: center;
    color: #fff;
-   margin:75px auto;
+   margin:275px auto;
    font-size: 15px;
    width: 150px;
    padding:15px;
    border: 1px solid #fff;
    border-radius: 10px;
-
+   animation: second 2s ease 0.5s;
+   animation-fill-mode:forwards;
+   -moz-animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);
 }
 
 @keyframes myfirst
 {
-0%   {opacity: 0;}
+   0%   {opacity: 0;}
 
-100% {opacity :0.8;}
+   100% {opacity :0.8;}
 }
 
+@keyframes second
+{
+   0%   {margin:275px auto}
+
+   70% { margin:55px auto}
+
+   100% { margin:75px auto}
+}
+
+@keyframes runcars
+{
+   0%   { margin-left: -400px;
+     opacity: 0;
+}
+
+   70% {  margin-left: 15px;}
+
+   100% {  margin-left: 0px;
+     opacity: 1;
+}
+}
