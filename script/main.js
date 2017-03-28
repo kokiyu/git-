@@ -46,6 +46,9 @@ var app = new Vue({
 			console.log("哈哈!");
 			this.show = !this.show;
 		},
+		enter:function(){
+			window.location.href=("./myself.html");    
+		}
 
 	},
 	 route:{

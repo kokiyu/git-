@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 1.5625vw;
+	font-family: "Microsoft Yahei";
+}
+
+html,body
+{
+	height: 100%;
+	overflow: hidden;
+
+}
+
+.introduce-container{
+	width: 30%;
+	height: 100%;
+	background:  url('../image/whale.jpeg') no-repeat;
+	background-size: 100% 100%;
+	
+}
+
+
+.introduce-container-bg
+{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.top
+{
+	width: 100%;
+	height: 25%;
+	background-color: #318bb1;
+	border-bottom: 3px solid #ffffff;
+	text-align:center;
+	padding-bottom: 55px;
+}
+
+.semi-circle {
+	border-radius: 150px 150px 0 0;
+	width: 150px;
+	height:80%;
+	background-color: #ffffff;
+	text-align: center;
+	margin: 0 auto;
+}
